@@ -1,15 +1,23 @@
-<header>
+<header class = "mt-3 mb-3 header">
   <div class = "container-fluid">
     <div class = "row">
-      <div class = "col-sm-2 text-left">
+      <div class = "col-sm-2 text-center col-logo">
         Font.Community
       </div>
       <div class = "col-sm-8 text-center">
         <input class="form-control" type="text" placeholder="Search Fonts, Foundries, Designer and more">
-      </div>      
-      <div class = "col-sm-2 text-right">
-        Menu
-      </div>      
+      </div>
+      <div class = "col-sm-2 text-right col-menu">
+        <div ngbDropdown class="d-inline-block" container = "body">
+          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Menu</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem>My Account</button>
+            <button ngbDropdownItem>My Fonts</button>
+            <button ngbDropdownItem>Connect Wallet</button>
+            <button ngbDropdownItem>Logout</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
